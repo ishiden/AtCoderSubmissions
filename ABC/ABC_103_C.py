@@ -2,8 +2,7 @@ def main():
     ans = 0
     n = int(input())
     l = list(map(int, input().split()))
-    for i in l:
-        ans += i - 1
+    ans = sum(l)-n
     print(ans)
 
 if __name__ == '__main__':
