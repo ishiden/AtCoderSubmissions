@@ -5,7 +5,6 @@ def main():
     a = 'indeednow'
     lena = len(a)
     ca = c.Counter(a)
-    print(ca)
     for i in range(n):
         ans = 'YES'
         s = input()
