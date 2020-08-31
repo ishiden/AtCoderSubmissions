@@ -17,7 +17,9 @@ def main():
             if s[i]%10 != 0:
                 ans -= s[i]
                 break
-    print(ans if ans%10 != 0: 0)
+    if ans%10 == 0:
+      ans = 0
+    print(ans)
 
 if __name__ == '__main__':
     main()
