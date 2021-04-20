@@ -3,19 +3,17 @@ import sys
 input = sys.stdin.readline
 
 def main():
-    words = ['stay', 'down', 'up']
-    n = int(input())
-    t = int(input())
-    for i in range(n-1):
-        c = int(input())
-        d = t - c
-        if d == 0:
-            print(words[0])
-        elif d > 0:
-            print(words[1], abs(d))
+    N = int(input())
+    prev = int(input())
+    for i in range(N-1):
+        A = int(input())
+        if A == prev:
+            print('stay')
+        elif A > prev:
+            print('up', A - prev)
         else:
-            print(words[2], abs(d))
-        t = c
+            print('down', prev - A)
+        prev = A
 
 if __name__ == '__main__':
     main()
