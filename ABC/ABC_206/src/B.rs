@@ -2,17 +2,18 @@ use proconio::input;
 
 fn main() {
     input!{
-        n: i32,
+        mut n: i64,
     }
-    let a: i32 = n * 108;
-    let ans = {
-        if a < 20600 {
-            "Yay!"
-        } else if a >= 20700 {
-            ":("
-        } else {
-            "so-so"
+
+    let mut ans = 0;
+
+    for i in 1..=n {
+        n -= i;
+        if n <= 0 {
+            ans = i;
+            break
         }
-    };
+    }
+
     println!("{}", ans);
 }
