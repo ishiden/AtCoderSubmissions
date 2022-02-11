@@ -15,7 +15,7 @@ def main():
     while cur < N - 2:
         if S[cur:cur + 3] == 'ABC':
                 ans += 1
-                cur += 3
+                cur += 2
         cur +=1
 
     print(ans)
