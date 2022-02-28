@@ -1,18 +1,23 @@
+import collections
+import itertools
+import math
+import re
 import sys
+import heapq
 
 input = sys.stdin.readline
 
 def main():
     ans = 'Yes'
     N = int(input())
-    h = list(map(int, input().split()))[::-1]
-    for i in range(N-1):
-        if h[i] < h[i+1]:
-            if h[i+1]-h[i] > 1:
-                ans='No'
+    H = list(map(int, input().split()))
+    for i in reversed(range(1, N)):
+        if H[i] < H[i-1]:
+            if H[i-1] - H[i] > 1:
+                ans = 'No'
                 break
             else:
-                h[i+1] -= 1
+                H[i-1] -= 1
 
     print(ans)
 
