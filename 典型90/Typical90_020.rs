@@ -8,7 +8,7 @@ fn main() {
         c : usize,
     }
 
-    if a < c.pow(b.try_into().unwrap()) {
+    if a < c.pow(b.try().unwrap()) {
         println!("Yes");
     } else {
         println!("No");
