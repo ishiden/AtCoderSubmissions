@@ -15,3 +15,10 @@ s-g1mj505si9-1l5snua.lock
 32403i3zk3wodltd.o
 3uwhvwfjh4sbvxwt.o
 isg716u6lb9oe5d.o
+Cargo.lock
+Cargo.toml
+main.rs
+.rustc_info.json
+.cargo-lock
+hello_world
+sandbox
