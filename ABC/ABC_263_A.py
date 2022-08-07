@@ -10,7 +10,6 @@ input = sys.stdin.readline
 def main():
     ans = 'No'
     cards = list(map(int, input().split()))
-    cards.sort()
     d = collections.defaultdict(int)
     for c in cards:
         d[c] += 1
