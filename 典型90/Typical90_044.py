@@ -25,6 +25,7 @@ def main():
             A[x], A[y] = A[y], A[x]
         elif T == 2:
             shift_cnt += 1
+            shift_cnt %= N
         else:
             print(A[x])
 
