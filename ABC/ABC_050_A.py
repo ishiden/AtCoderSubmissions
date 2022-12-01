@@ -1,0 +1,20 @@
+import collections
+import itertools
+import math
+import re
+import sys
+import heapq
+
+input = sys.stdin.readline
+
+def main():
+    ans = 0
+    S = list(input().split())
+    if S[1] == '+':
+        ans = int(S[0]) + int(S[2])
+    else:
+        ans = int(S[0]) - int(S[2])
+    print(ans)
+
+if __name__ == '__main__':
+    main()
