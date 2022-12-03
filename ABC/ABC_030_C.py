@@ -26,11 +26,11 @@ def main():
             arr_at = A[a_idx] + X
             if B[-1] < arr_at:
                 break
-            b_idx = bisect.bisect_left(B, arr_at)
+            b_idx = bisect.bisect_left(B, arr_at, b_idx)
             now_A = False
         else:
             arr_at = B[b_idx] + Y
-            a_idx = bisect.bisect_left(A, arr_at)
+            a_idx = bisect.bisect_left(A, arr_at, a_idx)
             now_A = True
             ans += 1
     print(ans)
