@@ -21,7 +21,7 @@ def main():
         points_x.append(x)
         points_y.append(y)
     points_x.sort
-    points_x.sort
+    points_y.sort
     e = [statistics.median(points_x), statistics.median(points_y)]
     for p in points:
         ans += abs(p[0] - e[0]) + abs(p[1] - e[1])
